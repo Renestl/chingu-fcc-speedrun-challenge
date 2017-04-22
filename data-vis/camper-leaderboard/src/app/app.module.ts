@@ -3,18 +3,30 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { MaterialModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import 'hammerjs';
+
+import { AppComponent } from './components/app.component';
+import { BrownieComponent } from './components/brownie/brownie.component';
+
+import { CampersService } from './shared/campers.service';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BrownieComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule.forRoot(),
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [CampersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

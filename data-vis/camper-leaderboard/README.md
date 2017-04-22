@@ -21,3 +21,6 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 See the finished product here: 
 
 ## Notes
+[Live Demo](http://renestl-camper-leaderboard.surge.sh/)
+[Source Code](https://github.com/Renestl/chingu-fcc-speedrun-challenge/tree/master/data-vis/camper-leaderboard)
+Favicon created by [Kornil](https://github.com/Kornil)
