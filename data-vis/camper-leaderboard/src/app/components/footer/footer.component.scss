@@ -1,4 +1,10 @@
-span {
+p {
   font-size: 0.75em;
   padding: 0 10px;
+}
+
+#feet {
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 0.75em;
 }
