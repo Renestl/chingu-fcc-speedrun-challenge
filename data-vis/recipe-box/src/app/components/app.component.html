@@ -1,3 +1,71 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar>
+  <div>
+    <h1>{{title}}</h1>
+  </div>
+</md-toolbar>
+
+<md-input-container>
+  <input type="text" mdInput placeholder="Search Recipes">
+</md-input-container>
+<button md-raised-button>+ New Recipe</button>
+
+<app-recipe-list *ngFor="let recipe of recipes"></app-recipe-list>
+
+<div class="selected">
+  <md-card>
+    <h3>Selected Recipe</h3>
+    <img src="https://cdn0.vox-cdn.com/thumbor/P7-MIF5awm6tBATpeV5QIRXK6-E=/0x0:578x723/920x613/filters:focal(214x407:306x499):format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/54653317/TOSTADAS_DE_TINGA_POBLANA_chicken_tinga_tostadas.0.jpg" alt="">
+    <p>Prep Time: Cook Time: # Servings: </p>
+    <h4>Ingredients</h4>
+    <ul>
+      <div>
+          <li>amount: </li><li>unit: </li><li>ingredient: </li>
+      </div>
+      <div>
+          <li>amount: </li><li>unit: </li><li>ingredient: </li>
+      </div>
+      <div>
+          <li>amount: </li><li>unit: </li><li>ingredient: </li>
+      </div>
+    </ul>
+
+    <h4>Directions</h4>
+    <ol>
+      <li>Direction 1</li>
+      <li>Direction 2</li>
+      <li>Direction 3</li>
+    </ol>
+  </md-card>
+
+  <button md-raised-button>Edit</button>
+  <button md-raised-button class="danger">Delete</button>
+</div>
+
+<div class="edit">
+  <h3>Edit Selected</h3>
+  <md-input-container>
+  <input type="text" mdInput placeholder="Name">
+  </md-input-container>
+  <md-input-container>
+  <input type="text" mdInput placeholder="Image">
+  </md-input-container>
+  <md-input-container>
+  <input type="text" mdInput placeholder="# Servings">
+  </md-input-container>
+  <md-input-container>
+  <input type="text" mdInput placeholder="Prep Time">
+  </md-input-container>
+  <md-input-container>
+  <input type="text" mdInput placeholder="Cook Time">
+  </md-input-container>
+  <md-input-container>
+  <input type="text" mdInput placeholder="Amount">
+  </md-input-container>
+  <md-input-container>
+  <input type="text" mdInput placeholder="Ingredient">
+  </md-input-container><span>-</span>
+  
+  <button md-raised-button>Add Ingredient</button>
+  <button md-raised-button>Save Recipe</button>
+  <button md-raised-button class="danger">Delete Recipe</button>
+</div>
